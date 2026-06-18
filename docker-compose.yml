@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: sloth-exchange-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: sloth_exchange
+      POSTGRES_USER: sloth
+      POSTGRES_PASSWORD: slothpass
+    ports:
+      - "5433:5432"
+    volumes:
+      - sloth_exchange_postgres_data:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    container_name: sloth-exchange-api
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      DATABASE_URL: "postgresql://sloth:slothpass@postgres:5432/sloth_exchange"
+      PORT: 3001
+    depends_on:
+      - postgres
+
+volumes:
+  sloth_exchange_postgres_data:
