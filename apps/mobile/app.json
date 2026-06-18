@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "sloth-exchange",
+    "slug": "sloth-exchange",
+    "version": "1.0.0",
+    "sdkVersion": "56.0.0",
+    "scheme": "slothexchange",
+    "platforms": ["ios", "android"],
+    "newArchEnabled": true
+  }
+}

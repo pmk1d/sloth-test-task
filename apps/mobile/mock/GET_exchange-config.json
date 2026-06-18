@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cfg_001",
+    "fromCurrency": "RUB",
+    "toCurrency": "CNY",
+    "rateBase": "CNY",
+    "rateQuote": "RUB-TBANK",
+    "paymentMethods": [
+      { "value": "TBANK", "label": "Т-Банк" },
+      { "value": "BANKS", "label": "Другие банки", "rateQuoteOverride": "RUB-BANKS" }
+    ],
+    "receivePlatforms": [
+      { "value": "alipay", "label": "AliPay" },
+      { "value": "wechat", "label": "WeChat" }
+    ],
+    "minAmount": 5000,
+    "sortOrder": 1
+  },
+  {
+    "id": "cfg_002",
+    "fromCurrency": "RUB",
+    "toCurrency": "THB",
+    "rateBase": "THB",
+    "rateQuote": "RUB-TBANK",
+    "paymentMethods": [
+      { "value": "TBANK", "label": "Т-Банк" }
+    ],
+    "receivePlatforms": [
+      { "value": "cash", "label": "Наличные" }
+    ],
+    "minAmount": 10000,
+    "sortOrder": 2
+  },
+  {
+    "id": "cfg_003",
+    "fromCurrency": "RUB",
+    "toCurrency": "USDT",
+    "rateBase": "USDT",
+    "rateQuote": "RUB-TBANK",
+    "paymentMethods": [
+      { "value": "TBANK", "label": "Т-Банк" },
+      { "value": "BANKS", "label": "Другие банки", "rateQuoteOverride": "RUB-BANKS" }
+    ],
+    "receivePlatforms": [
+      { "value": "trc20", "label": "TRC-20" },
+      { "value": "erc20", "label": "ERC-20" }
+    ],
+    "minAmount": 5000,
+    "sortOrder": 3
+  },
+  {
+    "id": "cfg_004",
+    "fromCurrency": "CNY",
+    "toCurrency": "RUB",
+    "rateBase": "CNY",
+    "rateQuote": "RUB-TBANK",
+    "paymentMethods": [
+      { "value": "alipay", "label": "AliPay" }
+    ],
+    "receivePlatforms": [
+      { "value": "TBANK", "label": "Т-Банк" }
+    ],
+    "minAmount": 500,
+    "sortOrder": 4
+  }
+]
