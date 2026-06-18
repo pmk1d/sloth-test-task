@@ -1,0 +1,5 @@
+{
+  "name": "sloth-test-task",
+  "private": true,
+  "workspaces": ["apps/*"]
+}
