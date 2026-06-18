@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String  @id @default(uuid())
+  firstName String? @map("first_name")
+  lastName  String? @map("last_name")
+
+  @@map("users")
+}
+
+model ExchangeConfig {
+  id               String @id @default(uuid())
+  fromCurrency     String @map("from_currency")
+  toCurrency       String @map("to_currency")
+  rateBase         String @map("rate_base")
+  rateQuote        String @map("rate_quote")
+  paymentMethods   Json   @map("payment_methods")
+  receivePlatforms Json   @map("receive_platforms")
+  minAmount        Float  @map("min_amount")
+  sortOrder        Int    @map("sort_order")
+
+  @@map("exchange_configs")
+}
+
+model Rate {
+  base      String
+  quote     String
+  tiers     Json
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@id([base, quote])
+  @@map("rates")
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "rate_001",
+    "base": "CNY",
+    "quote": "RUB-TBANK",
+    "updatedAt": "2026-06-18T10:00:00.000Z",
+    "tiers": [
+      { "min": 0, "rate": 13.10 },
+      { "min": 10000, "rate": 13.25 },
+      { "min": 50000, "rate": 13.40 }
+    ]
+  },
+  {
+    "id": "rate_002",
+    "base": "CNY",
+    "quote": "RUB-BANKS",
+    "updatedAt": "2026-06-18T10:00:00.000Z",
+    "tiers": [
+      { "min": 0, "rate": 12.90 },
+      { "min": 10000, "rate": 13.05 }
+    ]
+  },
+  {
+    "id": "rate_003",
+    "base": "THB",
+    "quote": "RUB-TBANK",
+    "updatedAt": "2026-06-18T10:00:00.000Z",
+    "tiers": [
+      { "min": 0, "rate": 2.71 },
+      { "min": 10000, "rate": 2.75 }
+    ]
+  },
+  {
+    "id": "rate_004",
+    "base": "USDT",
+    "quote": "RUB-TBANK",
+    "updatedAt": "2026-06-18T10:00:00.000Z",
+    "tiers": [
+      { "min": 0, "rate": 91.50 },
+      { "min": 10000, "rate": 92.00 },
+      { "min": 100000, "rate": 92.50 }
+    ]
+  },
+  {
+    "id": "rate_005",
+    "base": "USDT",
+    "quote": "RUB-BANKS",
+    "updatedAt": "2026-06-18T10:00:00.000Z",
+    "tiers": [
+      { "min": 0, "rate": 90.50 },
+      { "min": 10000, "rate": 91.00 }
+    ]
+  }
+]
