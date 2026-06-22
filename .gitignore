@@ -7,6 +7,20 @@ node_modules/
 .expo/
 dist/
 web-build/
+expo-env.d.ts
+
+# Expo prebuild output (CNG) — regenerated from app.json + config plugins +
+# modules/ + targets/, so the native projects are not committed.
+apps/mobile/ios/
+apps/mobile/android/
+
+# Native build / signing secrets
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
 # NestJS build
 apps/api/dist/
@@ -35,3 +49,12 @@ apps/api/generated/
 # IDE
 .vscode/
 .idea/
+
+# AI assistants / local agent tooling
+.claude/
+.cursor/
+.windsurf/
+.continue/
+.aider*
+.specstory/
+.history/
