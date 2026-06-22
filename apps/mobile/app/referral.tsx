@@ -1,20 +1,5 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { Placeholder } from '../src/components/Placeholder';
 
 export default function ReferralScreen() {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Referral Screen</Text>
-        </View>
-    );
+  return <Placeholder icon="person-add-outline" title="Рефералы" />;
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    text: {
-        fontSize: 18,
-    },
-});

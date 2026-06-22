@@ -1,20 +1,5 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { Placeholder } from '../src/components/Placeholder';
 
 export default function CreateOrderScreen() {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Create Order Screen</Text>
-        </View>
-    );
+  return <Placeholder icon="swap-horizontal" title="Создать сделку" />;
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    text: {
-        fontSize: 18,
-    },
-});

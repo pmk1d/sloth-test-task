@@ -1,5 +1,14 @@
 {
   "name": "sloth-test-task",
   "private": true,
-  "workspaces": ["apps/*"]
+  "workspaces": [
+    "apps/*"
+  ],
+  "overrides": {
+    "react": "19.2.3",
+    "react-native-safe-area-context": "5.7.0"
+  },
+  "devDependencies": {
+    "react": "19.2.3"
+  }
 }

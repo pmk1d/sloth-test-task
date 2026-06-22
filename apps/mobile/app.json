@@ -6,6 +6,13 @@
     "sdkVersion": "56.0.0",
     "scheme": "slothexchange",
     "platforms": ["ios", "android"],
-    "newArchEnabled": true
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "exchange.sloth.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "exchange.sloth.app"
+    }
   }
 }
